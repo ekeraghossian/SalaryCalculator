@@ -1,0 +1,28 @@
+<html>
+<head>
+<title>Salary Calculator</title>
+<link rel="stylesheet" type="text/css" href="design.css">
+</head>
+
+<body>
+<h1>Salary Calculator</h1>
+
+<div id="maindiv">
+<p>Enter your base salary: <input type="number" id="baseSalary"></p> 
+<p>Enter your hourly rate: <input type="number" id="hourlyRate"></p> 
+<p>Enter the number of hours worked after 19.00 on weekdays: <input type="number" id="More20"></p> 
+<p>Enter the number of hours worked before 19.00 in the weekend: <input type="number" id="More60"></p> 
+<p>Enter the number of hours worked after 19.00 in the weekend: <input type="number" id="More80"></p> 
+<p>Holiday pay monthly paid?: <input type="checkbox" id="holidayPay"></p>
+
+<button>Calculate <textarea rows="1" cols="25" id="salaryArea" disabled></textarea></button>
+</div>
+
+<div id="my-div">
+<iframe src="https://loonwijzer.nl/home/salaris/brutonetto" id="blad1" scrolling="yes" width="600" height="800"></iframe>
+</div>
+
+<script type="text/javascript" src="logic.js"></script>
+</body>
+
+</html>
